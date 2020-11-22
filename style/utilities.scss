@@ -1,0 +1,22 @@
+.body{
+    font-family: 'Roboto', 'Noto Sans' ,sans-serif;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.bg-primary{
+    background-color: $primary;
+}
+
+.text-white{
+    color: white;
+}
+
