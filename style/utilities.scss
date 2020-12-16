@@ -4,7 +4,8 @@
 
 img{
     display: block;
-    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a{
@@ -12,11 +13,42 @@ a{
     color: inherit;
 }
 
+h1{
+    font-size: 64px;
+}
+
 .bg-primary{
     background-color: $primary;
+}
+
+.bg-light{
+    background-color: $light;
 }
 
 .text-white{
     color: white;
 }
 
+.text-primary{
+    color: $primary;
+}
+
+.text-sec{
+    color: $secondary;
+}
+
+.df{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.mr30{
+    margin-right: 30px;
+}
+.ml30{
+    margin-left: 30px;
+}

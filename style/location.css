@@ -1,0 +1,107 @@
+.banner-location {
+  background-image: url(../img/qa.png);
+  height: 304px;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-location .container {
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner-location .bannerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner-location .bannerText h1 {
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.location .locationSelect label {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.location .locationSelect select {
+  width: 324px;
+  height: 45px;
+  color: #495057;
+  padding: 10px 19px;
+  border: 1px solid #CED4DA;
+}
+
+.location .locationList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.location .locationList .card {
+  width: 31.5315%;
+}
+
+.location .locationList .card .cardImg img {
+  width: 100%;
+  height: 224px;
+}
+
+.location .locationList .card .cardImg h2 {
+  font-size: 24px;
+  line-height: 36px;
+  padding: 12px 24px;
+  border: 1px solid #00000020;
+}
+
+.location .locationList .card .cardBody {
+  border: 1px solid #00000020;
+  padding: 16px 24px;
+}
+
+.location .locationList .card .cardBody li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+  vertical-align: baseline;
+}
+
+.location .locationList .card .cardBody li img {
+  width: 21px;
+  height: 21px;
+  margin-right: 12px;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
+}
+
+.location .locationList .card .cardBody li p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.location .locationList .card .locationDetail {
+  padding: 20px 0;
+  background-color: #000000;
+  display: block;
+  font-size: 19px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.location .locationList .card .locationDetail:hover {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+/*# sourceMappingURL=location.css.map */

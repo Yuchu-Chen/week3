@@ -12,6 +12,9 @@
 .navbarMenu{
     display: flex;
     li{
+        a{
+            padding: 10px;
+        }
         margin-left: 64px;
         padding: 40px 0;
         :hover{
@@ -90,6 +93,9 @@
         margin-right: 48px;
         padding-top: 12px;
         margin-bottom: 36px;
+        a{
+            padding: 10px 0px;
+        }
         &:hover{
             color: gray;
             transition: all 0.3s;
@@ -151,6 +157,12 @@
     padding-top: 24px;
     padding-bottom: 28px;
     align-items: center;
+    a{
+        &:hover{
+            color:gray;
+            transition: all .3s;
+        }
+    }
     
     img{
         width: 80px;

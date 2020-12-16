@@ -1,0 +1,270 @@
+// banner
+.banner {
+    background-image: url(../img/banner.png);
+    height: 840px;
+    display: flex;
+    align-items: center;
+    .bannerText{
+        color: $secondary;
+        p{
+            font-size: 36px;
+            line-height: 54px;
+            font-weight: bold;
+            text-align: right;
+        }
+        h1{
+            font-weight: bold;
+            text-align: right;
+            line-height: 96px;
+        }
+    }
+}
+// banner end
+
+// description
+.description{
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    h2{
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+}
+.descriptionDetail{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    img{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-bottom: 39px;
+    }
+    p{
+        color: black;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+}
+.descriptionItem{
+    width: 18%;
+}
+// description end
+
+// classic
+.classic{
+    padding-bottom: 80px;
+    h2{
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        margin-top: 64px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        display: flex;
+        margin-bottom: 32px;
+    }
+}
+.classic-pic{
+        width: 65%;
+}
+.classic-icon{
+    display: flex;
+    align-items: center;
+    img{
+        margin-right: 8px;
+    }
+    h3{
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+// classic end 
+
+// design
+.design{
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    h2{
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .designItem{
+        position: relative;
+        width: 48%;
+        h3{
+            font-size: 72px;
+            color: $primary;
+            font-weight: bold;
+            // TODO:文字要怎麼疊在圖片上？
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.5);
+            &:hover{
+                background: rgba(255, 255, 255, 0);
+                color: rgba(255, 255, 255, 0.7);
+                transition: all .5s;
+                bottom: 5px;
+            }
+        }
+        
+    }
+}
+// design end
+// customer
+.customer{
+    padding: 64px 0px;
+    h2{
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    li{
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            transition: all .5s;
+            box-shadow: 1px 8px 20px rgba(160, 160, 160, 0.7);
+            transform: translate(0, -10px);
+        }
+    }
+    .cardBody{
+        border: 1px solid #DEE2E6;
+        padding: 14px 16px;
+        h3{
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        h5{
+            font-size: 14px;
+            line-height: 21px;
+            color: #707070;
+        }
+    }
+}
+// customer end
+
+// contact
+.contact{
+    &_container{
+        max-width: 730px;
+        margin: 0 auto;
+        padding-top: 64px;
+        padding-bottom: 80px;
+    } 
+    h2{
+        font-size: 48px;
+        line-height: 72px;
+        color:black;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .form-group{
+        padding-top: 20px;
+        label{
+            display: inline-block;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 4px;
+        }
+        input{
+            border: 1px solid #000000;
+            width: 100%;
+            padding: 14px 16px;
+            background-color: transparent;
+            margin-bottom: 16px;
+        }
+        textarea{
+            height: 136px;
+            border: 1px solid #000000;
+            width: 100%;
+            padding: 14px 16px;
+            background-color: transparent;
+            margin-bottom: 16px;
+            // 把輸入框右下角的裝飾去掉
+            resize: none;
+        }
+        .privacy{
+            display: flex;
+            
+            .checkbox{
+                width: 24px;
+                padding: 0;
+                margin-top: 5px;
+                vertical-align: baseline;
+                background: transparent url('img/ic_check_box_outline_blank_24px.png');
+                // TODO:要怎麼讓checkbox跟文字在同一水平？
+                // TODO:checkbox的背景顏色要怎麼改？
+            }
+        }
+        .submit{
+            input{
+                width: 350px;
+                height: 54px;
+                background-color: $primary;
+                padding: 0;
+                border: none;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                align-items: center;
+                display: block;
+                margin: 0 auto;
+                margin-top: 42px;
+            }
+        }
+    }
+}
+// contact end
